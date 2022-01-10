@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="Survey_form.css" rel="stylesheet">
+    <title>FCC Survey Form</title>
 </head>
 <body>
-    
+    <header>
+        <h1 id="title">FreeCodeCamp Survey Form</h1>
+        <p id="description"><i>Thank you for taking the time to help us improve the platform</i></p>
+    </header>
+    <form id="survey_form" action="#" method="post">
+        <div class="form_ele">
+            <lable for="name">Name</lable>
+            <input type="text" name="name" id="name" placeholder="Enter Your Name" class="inputt">
+        </div>
+        <div class="form_ele">
+            <lable for="email">Email</lable>
+            <input type="email" name="email" id="email" placeholder="Enter Your Email" class="inputt">
+        </div>
+    </form>
 </body>
 </html>
