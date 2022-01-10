@@ -43,3 +43,6 @@ body::before {
     height: 30px;
     border-radius: 5px;
 }
+.clue{
+    font-size: 13px;
+}

@@ -14,12 +14,16 @@
     </header>
     <form id="survey_form" action="#" method="post">
         <div class="form_ele">
-            <lable for="name">Name</lable>
-            <input type="text" name="name" id="name" placeholder="Enter Your Name" class="inputt">
+            <lable for="name" id="name-label">Name</lable>
+            <input type="text" name="name" id="name" placeholder="Enter Your Name" class="inputt" required>
         </div>
         <div class="form_ele">
-            <lable for="email">Email</lable>
-            <input type="email" name="email" id="email" placeholder="Enter Your Email" class="inputt">
+            <lable for="email" id="email-label">Email</lable>
+            <input type="email" name="email" id="email" placeholder="Enter Your Email" class="inputt" required>
+        </div>
+        <div class="form_ele">
+            <label for="number" id="number-label">Age <span class="clue">(optional)</span></label>
+            <input type="number" name="number" id="number" placeholder="Enter Your Age" class="inputt" min="10" max="99">
         </div>
     </form>
 </body>
