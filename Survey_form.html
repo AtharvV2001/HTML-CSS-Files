@@ -25,6 +25,54 @@
             <label for="number" id="number-label">Age <span class="clue">(optional)</span></label>
             <input type="number" name="number" id="number" placeholder="Enter Your Age" class="inputt" min="10" max="99">
         </div>
+        <div class="form_ele">
+            <label for="dropdown">Where do you come to know about FCC?</label>
+            <select id="dropdown" name="Place" class="inputt" required>
+                <option value disabled selected>Select a Option</option>
+                <option value="yt">From Youtube Video</option>
+                <option value="Ad">Advertisment</option>
+                <option value="Friend">Friend Suggested</option>
+                <option value="other">Some Other Mean</option>
+            </select>
+        </div>
+        <div class="form_ele">
+            Would you recommend freeCodeCamp to a friend?<br>
+            <label for="Definitely">
+                <input type="radio" id="Definitely" name="rec" value="Definitely">Definitely
+            </label><br>
+            <label for="maybe">
+                <input type="radio" id="maybe" name="rec" value="maybe">Maybe
+            </label><br>
+            <label for="No">
+                <input type="radio" id="No" name="rec" value="No">No
+            </label>
+        </div>
+        <div class="form_ele">
+            What you are learning? <span class="clue">(Check all that apply)</span><br>
+            <label for="Front">
+                <input type="checkbox" id="Front" name="learn" value="front">Front-End Developing
+            </label><br>
+            <label for="Back">
+                <input type="checkbox" id="Back" name="learn" value="Back">Back-End Developing
+            </label><br>
+            <label for="Full">
+                <input type="checkbox" id="Full" name="learn" value="Full">Full-Stack Developing
+            </label><br>
+            <label for="Analystics">
+                <input type="checkbox" id="Analystics" name="learn" value="Analystics">Data Analystics
+            </label><br>
+            <label for="Paradims">
+                <input type="checkbox" id="Paradims" name="learn" value="Paradims">Programming Paradims
+            </label><br>
+            <label for="other">
+                <input type="checkbox" id="other" name="learn" value="other">Others
+            </label><br>
+        </div>
+        <div class="form_ele">
+            <lable for="comment">Any comments or suggestions?</lable>
+            <textarea id="comment" name="comment" placeholder="Enter Comment Here"></textarea>
+        </div>
+        <button type="submit" id="submit">Submit</button>
     </form>
 </body>
 </html>
