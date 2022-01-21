@@ -1,0 +1,323 @@
+/* All Html Page CSS */
+
+html{
+    font-size: 62.5%;
+}
+body{
+    margin:0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+/* Header Css */
+.head{
+    display:flex;
+    flex: 1;
+}
+.title{
+    background-color: #2d353d;
+    width: 50%;
+    height: 70rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.book-name{
+    font-size: 5rem;
+    color: #fff7d0;
+}
+.hr1{
+    width: 25rem;
+}
+.info{
+    font-size: 2rem;
+    color:#4f6e8f;
+    padding: 2rem;
+}
+.btn{
+    width: 12rem;
+    height: 4rem;
+    background-color: #feea8b ;
+    font-weight: bold;
+    border: none;
+}
+.btn:hover{
+    background-color: #faefb7;
+}
+.title-img{
+    width: 60%;
+    height: 70rem;
+    text-align: center;
+}
+.title-img img{
+    width: 100%;
+    height: 70rem;
+    
+}
+
+/* Quote CSS */
+blockquote{
+    background-color: #40474f;
+    color: white;
+    width: 100%;
+    margin: 0;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.quote{
+    font-size: 2.6rem;
+    font-weight: bolder;
+}
+.about-q{
+    font-size: 2rem;
+    width: 90rem;
+}
+
+/* About Book CSS */
+
+.about{
+    display: grid;
+    font-size: 2rem;
+    grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 100rem) minmax(2rem, 1fr);
+}
+.about-title, .about-sum, .about-det{
+    grid-column: 2/3;
+}
+.about-title{
+    font-size: 3.8rem;
+}
+.about-det{
+    display: flex;
+}
+.about-det img{
+    width: 55%;
+    height: 50rem;
+    padding-top: 1.2rem;
+}
+.btn1{
+    width: 17rem;
+    background:
+    linear-gradient(to right, black 0.7px, transparent 3px) 0 100%,
+    linear-gradient(to right, black 0.7px, transparent 3px) 0 0,
+    linear-gradient(to left, black 0.7px, transparent 3px) 100% 0,
+    linear-gradient(to left, black 0.7px, transparent 3px) 100% 100%,
+    linear-gradient(to bottom, black 0.7px, transparent 3px) 0 0,
+    linear-gradient(to bottom, black 0.7px, transparent 3px) 100% 0,
+    linear-gradient(to top, black 0.7px, transparent 3px) 0 100%,
+    linear-gradient(to top, black 0.7px, transparent 3px) 100% 100%;
+
+  background-repeat: no-repeat;
+  background-size: 15px 12px;
+  border: none;
+  background-color:#feea8b ;
+}
+
+/* Smaple Form CSS */
+.sample{
+    background-color: #40474f;
+    color: white;
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 4;
+}
+.sample p{
+    font-size: 3.2rem;
+    padding-right: 4rem;
+}
+.sample form{
+    display: flex;
+    flex-direction: column;
+}
+.sample form .sample-in{
+    width: 30rem;
+    height: 3.3rem;
+    border: none;
+    background-color: #6c7176;
+}
+.btn2{
+    margin-top: 3rem;
+    width: 30.5rem;
+    opacity: 0.1;
+}
+.btn2:hover{
+    animation: show 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes show {
+    0%{
+        opacity: 0.1;
+    }
+    100%{
+        opacity: 1;
+    }
+    /* 100%{
+        border: orange;
+    } */
+    
+}
+
+::placeholder{
+    color:white;
+    opacity: 0.7;
+}
+
+/* Chapter List CSS */
+.chapter{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 3;
+    overflow: hidden;
+}
+.chapter-d2{
+    background-color: #fff7d0 ;
+    position: absolute;
+    width: 35rem;
+    height: 70rem;
+    transform: rotate(45deg);
+    top: -38%;
+    left: -7.5rem;
+    z-index: 1;
+}
+.chapter-d1{
+    background-color: #fff7d0 ;
+    position: absolute;
+    width: 35rem;
+    height: 70rem;
+    transform: rotate(45deg);
+    bottom: -38%;
+    right: -8rem;
+    z-index: 1;
+}
+.chapter h2{
+    font-size: 3.8rem;
+    
+}
+.chapter p{
+    font-size: 2.2rem;
+    
+}
+.list h3{
+    font-size: 2.5rem;
+    
+}
+.list{
+    
+    display: grid;
+    grid-template-columns: repeat(2,54rem);
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+.elem{
+    width: 50rem;
+    background-color: #fff7d0;
+    height: 13rem;
+    padding-left: 2rem;
+}
+
+/* About Author CSS */
+.author{
+    background-color: #f7f7f7;
+    display: grid;
+    grid-template-columns: 1.7fr 2fr;
+    column-gap: 3rem;
+    
+}
+.author-img{
+    width: 100%;
+    object-fit: cover;
+}
+.au-img{
+    grid-area: "img";
+    width: 40rem;
+    height: auto;
+    justify-self: end;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.about-au{
+    padding-top: 4rem ;
+    width: 50%;
+}
+.about-au h2{
+    font-size: 3.8rem;
+}
+.about-au p{
+    font-size: 2.2rem;
+}
+.about-au a{
+    text-decoration: none;
+    color: rgb(78, 78, 78);
+}
+.about-au a:hover{
+    text-decoration: underline;
+}
+
+/* Footer CSS */
+footer{
+    background-color: #2d353d;
+    color: white;
+    height: 30rem;
+    font-size: 2.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    margin-right: 2rem;
+}
+.social-icon a{
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+}
+.copyright{
+    color:rgb(173, 173, 173);
+    padding-top: 15px;
+}
+
+/* Responsive CSS */
+
+@media screen and (max-width: 90rem) {
+    html{
+        font-size: 50%;
+    }
+    .chapter-d2, .chapter-d1{
+        display: none;
+    }
+    .list{
+        grid-template-columns: 100rem;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 50rem) {
+    html{
+        font-size: 50%;
+    }
+    .chapter-d2, .chapter-d1{
+        display: none;
+    }
+}
+
