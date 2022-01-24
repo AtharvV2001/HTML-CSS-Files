@@ -13,7 +13,11 @@
 
 <script>
     function myFun() {
-        alert("Email is Sent with Free Sample");
+        let e = document.getElementById("email").value;
+        let reg = /\w+@[a-zA-z]+.com/;
+        if (reg.test(e)) { alert("Email Enter is " + e + ".\nPress ok to send Sample of book."); }
+        else { alert("Enter proper Email"); }
+
     }
 </script>
 
